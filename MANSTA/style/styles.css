@@ -1,0 +1,57 @@
+body {
+  background: rgba(224, 224, 224)!important;
+}
+.site-header {
+  background-color: rgba(224, 224, 224);
+}
+.site-header a {
+  color: #024e73;
+}
+
+.img-fluid {
+  position: absolute;
+  max-width: 100%;
+  bottom: -10%;
+
+}
+
+#glassOfWater {
+background-image: url(../images/isvalytos_nuotekos.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.bg-dark {
+  color: #024e73;
+}
+
+.product-device {
+  position: absolute;
+  /* right: 10%; */
+  bottom: -10%;
+  width: 960px;
+  height: 540px;
+  /* background-color: #333; */
+  border-radius: 21px;
+  /* -webkit-transform: rotate(0deg);
+  transform: rotate(0deg); */
+}
+
+/* .product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+} */
+/*
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+} */
