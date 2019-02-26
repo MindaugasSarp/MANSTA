@@ -1,24 +1,40 @@
 body {
   background: rgba(224, 224, 224)!important;
 }
+/* jumbotron */
+.jumbotron {
+  background-color: rgba(224, 224, 224);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+/* .row {
+  line-height: 90px;
+} */
+.workHours p {
+  color: #024e73;
+  margin-bottom: 0.5rem;
+}
+.workHours h4 {
+  color: #024e73;
+}
+
+.img-fluid {
+  height: 90px;
+}
+/* header */
 .site-header {
   background-color: rgba(224, 224, 224);
 }
 .site-header a {
   color: #024e73;
 }
-
-.img-fluid {
-  position: absolute;
-  max-width: 100%;
-  bottom: -10%;
-
-}
-
-#glassOfWater {
+/* content */
+.glassOfWater {
 background-image: url(../images/isvalytos_nuotekos.jpg);
 background-repeat: no-repeat;
 background-position: center;
+max-width: 100%;
 }
 
 .bg-dark {
