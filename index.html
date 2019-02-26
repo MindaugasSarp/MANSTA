@@ -64,12 +64,20 @@
 </div>
 </nav>
 
-<div class="glassOfWater position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-  <div class="col-md-5 p-lg-5 mx-auto my-5">
-    <!-- <h1 class="display-4 font-weight-normals text-light">Punny headline</h1> -->
-    <p class="lead font-weight-bold text-white" >Tai, ko mums reikia, arba nieko nekainuoja, arba labai pigiai: prigimtis reikalauja tik duonos ir vandens.</p>
+<!-- <div class="glassOfWater position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
+  <div class="col-md-5 p-lg-5 mx-auto my-5" style="height: 600px;">
+    <h1 class="display-4 font-weight-normals text-light">Punny headline</h1>
+    <p class="lead font-weight-bold text-white" >Mansta įgaliotas August atstovas</p>
     <p class="lead font-weight-bold text-white" >Seneka</p>
   </div>
+</div> -->
+
+<div class="jumbotron paral paralsec">
+<h1 class="display-3">Mansta įgaliotas August atstovas</h1>
+<!-- <p class="lead">Here is a short description 1</p>
+<p class="lead">
+<a class="btn btn-info btn-lg btn-md" href="#" role="button">Here is a button 1</a>
+</p> -->
 </div>
 
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
@@ -81,6 +89,128 @@
     </div>
     <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
   </div>
+
+<div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="my-3 p-3">
+    <h2 class="display-5">Gauti sąmatą</h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" placeholder="Vardas">
+        </div>
+        <!-- radio buttons -->
+        <div class="form-group col-md-6">
+          <label class="mr-1 col-md-12">Žmonių skaičius</label>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1-4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2-6</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">3-8</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">4-8</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="inputCity" placeholder="Vietove">
+        </div>
+        <!-- radio buttons -->
+        <div class="form-group col-md-6">
+          <label class="mr-1 col-md-12">Nuotekų vamzdis iš pastato</label>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Nėra</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">~0,5</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">~1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">>1</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="phoneNumber" class="form-control" id="phoneNumber" placeholder="Tel. Nr.">
+        </div>
+        <!-- quantyti buttons -->
+        <div class="form-group col-md-6">
+          <label class="mr-1 col-md-12" for="">Kiek metrų reikės visiems montavimo darbams</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="fas fa-minus">-</span>
+                </button>
+              </span>
+              <input type="text" name="quant[1]" class="form-control input-number" id="inputGroup-sizing-sm" value="1" min="1" max="10">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="fas fa-plus">+</span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6 align-middle">
+          <input type="email" class="form-control" id="inputEmail" placeholder="El. paštas">
+        </div>
+
+        <div class="form-group col-md-6">
+          <label class="mr-1 col-md-12">Gruntas Jūsų sklype?</label>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Molis</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Smėlis/žvyras</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Šlapias gruntas</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Gauti sąmatą</button>
+    </form>
+  </div>
+  <!-- <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-color: #024e73;"></div> -->
+
+</div>
+</div>
+
+<!-- Second Parallax Section -->
+<div class="jumbotron paral paralsec1">
+<h1 class="display-3">Naujienos</h1>
+<p class="lead">Here is a short description 2</p>
+<!-- <p class="lead">
+<a class="btn btn-warning btn-lg btn-md" href="widgets.html" role="button">Here is a button 2</a>
+</p> -->
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
       <h2 class="display-5">Servisas</h2>
@@ -89,20 +219,9 @@
     </div>
     <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-color: #024e73;"></div>
   </div>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-      <h2 class="display-5">Galerija</h2>
-      <p class="lead">And an even wittier subheading.</p>
-      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-    </div>
-    <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-color: #024e73;"></div>
-  </div>
   <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: #024e73;">
     <div class="my-3 py-3">
-      <h2 class="display-5">Noriu, kad su manim susisiektų</h2>
+      <h2 class="display-5">Noriu, kad su manimi susisiektu</h2>
       <form>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -138,10 +257,19 @@
   </div>
 </div>
 
+<!-- Third Parallax Section -->
+<div class="jumbotron paral paralsec2">
+<!-- <h1 class="display-3">Here is a heading 3</h1> -->
+<!-- <p class="lead">Here is a short description 2</p>
+<p class="lead">
+<a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Here is a button 3</a>
+</p> -->
+</div>
+
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
   <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: #024e73;">
     <div class="my-3 py-3">
-      <h2 class="display-5">Apie mus</h2>
+      <h2 class="display-5">Galerija</h2>
       <p class="lead">And an even wittier subheading.</p>
       <a class="btn btn-outline-secondary" href="#">Coming soon</a>
     </div>
@@ -149,13 +277,39 @@
   </div>
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-      <h2 class="display-5">Komanda</h2>
+      <h2 class="display-5">Apie mus</h2>
       <p class="lead">And an even wittier subheading.</p>
       <a class="btn btn-outline-secondary" href="#">Coming soon</a>
     </div>
     <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-color: #024e73;"></div>
   </div>
 </div>
+
+<!-- Fourth Parallax Section -->
+<div class="jumbotron paral paralsec2">
+<!-- <h1 class="display-3">Here is a heading 3</h1>
+<p class="lead">Here is a short description 2</p>
+<p class="lead">
+<a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Here is a button 3</a>
+</p> -->
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Komanda</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-color: #024e73;"></div>
+      </div>
+      <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: #024e73;">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Kontaktai</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div>
 
 <footer class="container py-5">
   <div class="row">
@@ -208,9 +362,11 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="script/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script> -->
 <script src="script/popper.js"></script>
 <script src="script/bootstrap.js"></script>
 <script src="script/holder.js"></script>
+<script src="script/scripts.js"></script>
 <script>
 Holder.addTheme('thumb', {
   bg: '#55595c',
