@@ -119,4 +119,9 @@ background-image: url(../images/1.jpg);}
 background-image: url(../images/1.jpg);
 }
 
+.add-img {
+  max-height: 400px;
+  max-width: 100%;
+}
+
 /* Add more images for more sections */
