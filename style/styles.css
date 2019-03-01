@@ -53,8 +53,7 @@ background-size: contain;
 }
 
 .single-counter {
-  width: 33%;
-  float: left;
+  /* float: left;  */
   text-align: center;
   color: #e0e0e0;
 }
