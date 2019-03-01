@@ -72,13 +72,30 @@
 </div>
 </div> -->
 
-<div class="jumbotron paral paralsec">
+<div class="counter-section section-padding fix position-relative overflow-hidden">
+  <div class="wrapper">
+    <div class="single-counter">
+      <span class="counter">1000</span>
+      <p>KLIENTAI</p>
+    </div>
+    <div class="single-counter">
+      <span class="counter">15</span>
+      <p>KOMANDA</p>
+    </div>
+    <div class="single-counter">
+      <span class="counter">7</span>
+      <p>PATIRTIS</p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="jumbotron paral paralsec">
   <h1 class="display-3">Mansta įgaliotas August atstovas</h1>
-  <!-- <p class="lead">Here is a short description 1</p>
+  <p class="lead">Here is a short description 1</p>
   <p class="lead">
   <a class="btn btn-info btn-lg btn-md" href="#" role="button">Here is a button 1</a>
-</p> -->
-</div>
+</p>
+</div> -->
 
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
   <div class="bg-light mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center text-dark overflow-hidden">
@@ -431,12 +448,16 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+
 <script src="script/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <!-- <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script> -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="script/popper.js"></script>
 <script src="script/bootstrap.js"></script>
 <script src="script/holder.js"></script>
+<script src="script/jquery.counterup.js"></script>
 <script src="script/scripts.js"></script>
 <script>
 Holder.addTheme('thumb', {
@@ -444,6 +465,14 @@ Holder.addTheme('thumb', {
   fg: '#eceeef',
   text: 'Thumbnail'
 });
+</script>
+<script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 20,
+                time: 2000
+            });
+        });
 </script>
 </body>
 </html>

@@ -46,6 +46,28 @@ background-position: center;
 background-size: contain;
 }
 
+/* counterup */
+
+.counter-section {
+	background-color: #024e73;
+}
+
+.single-counter {
+  width: 33%;
+  float: left;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.single-counter span {
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.single-counter p {
+  font-size: 48px;
+}
+
 .bg-dark {
   color: #024e73;
 }
