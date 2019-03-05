@@ -67,6 +67,20 @@ background-size: contain;
   font-size: 48px;
 }
 
+/* .progress-bar {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: center;
+	justify-content: center;
+	color: #e0e0e0;
+	text-align: center;
+	white-space: nowrap;
+	background-color: #e0e0e0;
+	transition: width 0.6s ease;
+} */
+
 .bg-dark {
   color: #024e73;
 }
@@ -143,6 +157,12 @@ background-image: url(../images/1.jpg);
 .add-img {
   max-height: 400px;
   max-width: 100%;
+}
+
+.product-icon {
+  height: 36px;
+  width: 36px;
+  margin: 8px;
 }
 
 /* Add more images for more sections */
