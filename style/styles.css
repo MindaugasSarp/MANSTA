@@ -140,4 +140,9 @@ background-image: url(../images/1.jpg);
 	border: none !important;
 }
 
+.product-atcp {
+	margin-right: -20px !important;
+	margin-left: -20px !important;
+}
+
 /* Add more images for more sections */
