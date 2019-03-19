@@ -161,6 +161,55 @@ a.navbar-brand {
   }
 }
 
+.productDP {
+  background-color: white !important;
+  color: #024e73 !important;
+}
+
+.productKP {
+  background-color: #024e73 !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 760px) {
+  .servisas {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .galerija {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .kaunoK {
+    background-color: white !important;
+    color: #024e73 !important;
+  }
+
+  .kaunoZ {
+    background-color: #024e73 !important;
+  }
+
+  .productKP {
+    background-color: white !important;
+    color: #024e73 !important;
+  }
+
+  .productDP {
+    background-color: #024e73 !important;
+    color: white !important;
+  }
+
+  #pw {
+    background-image: url(../images/product_icons/people.svg) !important;
+  }
+
+  #ew {
+    background-image: url(../images/product_icons/eur.svg) !important;  
+  }
+}
+
 .bg-dark {
   color: #024e73;
 }
