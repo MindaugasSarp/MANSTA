@@ -99,13 +99,8 @@ a.navbar-brand {
   color: white;
 }
 
-/* content */
-.glassOfWater {
-  background-image: url(../images/1_l.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
+
+
 
 /* counterup */
 .counter-section {
@@ -199,6 +194,9 @@ a.navbar-brand {
   .productDP {
     background-color: #024e73 !important;
     color: white !important;
+  }
+  .modal-product-img {
+    height: 300px !important;
   }
 }
 
