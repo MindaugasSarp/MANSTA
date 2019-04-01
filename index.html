@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="Mindaugas Šarpis" content="email address mindaugas.sharpis@gmail.com" >
   <link rel="icon" href="images/logo/fb profilio foto 180x180 px M.jpg">
 
   <title>MANSTA</title>
@@ -22,6 +22,8 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- For Form sent email -->
+  <script language="JavaScript" src="script/gen_validatorv31.js" type="text/javascript"></script>
 
 </head>
 
@@ -126,62 +128,62 @@
     <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: #024e73;">
       <div class="my-3 p-3">
         <h2 class="display-5">Gauti sąmatą</h2>
-        <form>
+        <form method="post" name="gautiSamataForma" action="gautiSamata.php">
           <div class="form-row align-items-center">
             <div class="form-group col-md-6">
-              <input type="text" class="form-control" placeholder="Vardas">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Vardas">
             </div>
             <!-- radio buttons -->
             <div class="form-group col-md-6 row justify-content-center">
               <label class="mr-1 col-md-12">Žmonių skaičius</label>
 
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <input class="form-check-input" type="radio" name="radioOne" id="inlineRadio1" value="1-4">
                 <label class="form-check-label" for="inlineRadio1">1-4</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <input class="form-check-input" type="radio" name="radioOne" id="inlineRadio2" value="2-6">
                 <label class="form-check-label" for="inlineRadio2">2-6</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">3-8</label>
+                <input class="form-check-input" type="radio" name="radioOne" id="inlineRadio3" value="3-8">
+                <label class="form-check-label" for="inlineRadio3">3-8</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">4-8</label>
+                <input class="form-check-input" type="radio" name="radioOne" id="inlineRadio4" value="4-8">
+                <label class="form-check-label" for="inlineRadio4">4-8</label>
               </div>
             </div>
           </div>
           <div class="form-row align-items-center">
             <div class="form-group col-md-6">
-              <input type="text" class="form-control" id="inputCity" placeholder="Vietove">
+              <input type="text" name="vietove" class="form-control" id="inputCity" placeholder="Vietove">
             </div>
             <!-- radio buttons -->
             <div class="form-group col-md-6 row justify-content-center">
               <label class="mr-1 col-md-12">Nuotekų vamzdžio gylis iš pastato</label>
 
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <input class="form-check-input" type="radio" name="radioTwo" id="inlineRadio1" value="Nėra">
                 <label class="form-check-label" for="inlineRadio1">Nėra</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <input class="form-check-input" type="radio" name="radioTwo" id="inlineRadio2" value="0,5">
                 <label class="form-check-label" for="inlineRadio2">~0,5</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">~1</label>
+                <input class="form-check-input" type="radio" name="radioTwo" id="inlineRadio3" value="~1">
+                <label class="form-check-label" for="inlineRadio3">~1</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">>1</label>
+                <input class="form-check-input" type="radio" name="radioTwo" id="inlineRadio4" value=">1">
+                <label class="form-check-label" for="inlineRadio4">>1</label>
               </div>
             </div>
           </div>
           <div class="form-row align-items-center">
             <div class="form-group col-md-6">
-              <input type="phoneNumber" class="form-control" id="phoneNumber" placeholder="Tel. Nr.">
+              <input type="phoneNumber" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="Tel. Nr.">
             </div>
             <!-- quantyti buttons -->
             <div class="form-group col-md-6 row justify-content-center">
@@ -189,11 +191,11 @@
               <div class="col-md-5">
                 <div class="input-group">
                   <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number btn-dark" disabled="disabled" data-type="minus" data-field="quant[1]">-</button>
+                    <button type="button" class="btn btn-default btn-number btn-dark" disabled="disabled" data-type="minus" data-field="metrai">-</button>
                   </span>
-                  <input type="text" name="quant[1]" class="form-control input-number" id="inputGroup-sizing-sm" value="1" min="1" max="50">
+                  <input type="text" name="metrai" class="form-control input-number" id="inputGroup-sizing-sm" value="1" min="1" max="50">
                   <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number btn-dark" data-type="plus" data-field="quant[1]">+</button>
+                    <button type="button" class="btn btn-default btn-number btn-dark" data-type="plus" data-field="metrai">+</button>
                   </span>
                 </div>
               </div>
@@ -202,28 +204,39 @@
 
           <div class="form-row align-items-center">
             <div class="form-group col-md-6 align-middle">
-              <input type="email" class="form-control" id="inputEmail" placeholder="El. paštas">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="El. paštas">
             </div>
 
             <div class="form-group col-md-6 row justify-content-center">
               <label class="mr-1 col-md-12">Gruntas Jūsų sklype</label>
 
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <input class="form-check-input" type="radio" name="radioThree" id="inlineRadio1" value="Molis">
                 <label class="form-check-label" for="inlineRadio1">Molis</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <input class="form-check-input" type="radio" name="radioThree" id="inlineRadio2" value="Smėlis/žvyras">
                 <label class="form-check-label" for="inlineRadio2">Smėlis/žvyras</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">Šlapias gruntas</label>
+                <input class="form-check-input" type="radio" name="radioThree" id="inlineRadio3" value="Šlapias gruntas">
+                <label class="form-check-label" for="inlineRadio3">Šlapias gruntas</label>
               </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Gauti sąmatą</button>
+          <button type="submit" class="btn btn-primary" name="submit" value="submit" href="aciu.html">Gauti sąmatą</button>
         </form>
+        <script language="JavaScript">
+        // Code for validating the form
+        // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+        // for details
+        var frmvalidator  = new Validator("gautiSamataForma");
+        frmvalidator.addValidation("name","req","Įveskite savo vardą!");
+        frmvalidator.addValidation("email","req","Įveskite savo el. paštą!");
+        frmvalidator.addValidation("email","email","Įveskite savo galiojantį el. paštą!");
+        </script>
+
+
       </div>
       <!-- <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-color: #024e73;"></div> -->
 
@@ -234,38 +247,47 @@
     <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color: #024e73;">
       <div class="my-3 py-3">
         <h2 class="display-5">Užsisakyti serviso paslaugą</h2>
-        <form>
+        <form method="post" name="uzsakytiServisa" action="servisas.php">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="text" class="form-control" placeholder="Vardas">
+              <input type="text" class="form-control" name="sName" placeholder="Vardas">
             </div>
             <div class="form-group col-md-6">
-              <input type="text" class="form-control" placeholder="Pavardė">
+              <input type="text" class="form-control" name="sSurname" placeholder="Pavardė">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Elektroninis paštas</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="info@mansta.lt">
+              <input type="email" class="form-control" name="sEmail" id="inputEmail4" placeholder="info@mansta.lt">
             </div>
             <div class="form-group col-md-6">
               <label for="inputPhoneNumber4">Telefono Nr.</label>
-              <input type="phoneNumber" class="form-control" id="phoneNumber" placeholder="+370 605 44 609">
+              <input type="phoneNumber" class="form-control" name="sPhoneNumber" id="phoneNumber" placeholder="+370 605 44 609">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputAddress">Addresas</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Jaurės g. 5">
+            <label for="inputAddress">Adresas</label>
+            <input type="text" class="form-control" name="sAddress" id="inputAddress" placeholder="Jaurės g. 5">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputCity">Miestas</label>
-              <input type="text" class="form-control" id="inputCity" placeholder="Kėdainiai">
+              <input type="text" class="form-control" name="sCity" id="inputCity" placeholder="Kėdainiai">
             </div>
           </div>
       </div>
-      <button type="submit" class="btn btn-primary">Užsakyti</button>
+      <button type="submit" class="btn btn-primary" name="submit" href="acius.html">Užsakyti</button>
       </form>
+      <script language="JavaScript">
+      // Code for validating the form
+      // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+      // for details
+      var frmvalidator  = new Validator("uzsakytiServisa");
+      frmvalidator.addValidation("sName","req","Įveskite savo vardą!");
+      frmvalidator.addValidation("sEmail","req","Įveskite savo el. paštą!");
+      frmvalidator.addValidation("sEmail","sEmail","Įveskite savo galiojantį el. paštą!");
+      </script>
     </div>
     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-1 py-1">
