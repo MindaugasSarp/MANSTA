@@ -12,6 +12,7 @@ $radioOne = $_POST['radioOne'];
 $radioTwo = $_POST['radioTwo'];
 $metrai = $_POST['metrai'];
 $radioThree = $_POST['radioThree'];
+$radioFour = $_POST['radioFour'];
 
 //Validate first
 if(empty($name)||empty($visitor_email))
@@ -36,6 +37,7 @@ $email_body = "Užsakovo vardas: $name.\n".
 		"Nuotekų vamzdžio gylis iš pastato: $radioTwo.\n".
 		"Kiek metrų reikės visiems montavimo darbams: $metrai.\n".
 		"Gruntas Jūsų sklype: $radioThree.\n".
+    "Kur išleisime išvalytą vandenį: $radioFour.\n".
 
 
 $to = 'info@mansta.lt';//<== update the email address mindaugas.sharpis@gmail.com info@mansta.lt
