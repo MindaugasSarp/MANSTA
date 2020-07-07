@@ -167,7 +167,7 @@ a.navbar-brand {
 }
 
 @media screen and (max-width: 760px) {
-  .servisas {
+  .tinklai {
     display: flex;
     flex-direction: column-reverse;
   }
