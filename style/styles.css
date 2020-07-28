@@ -126,33 +126,31 @@ a.navbar-brand {
   width: 55%;
 }
 
-@media screen and (max-width: 992px) {
-  .single-counter span {
-    font-size: 48px;
-    font-weight: bold;
+@media screen and (max-width: 1000px) {
+  .mainTitle h1 {
+    font-size: 1.75rem;
   }
 
-  .single-counter p {
-    font-size: 24px;
+  .mainTitle h2 {
+    font-size: 1.5rem;
   }
 
-  .progress {
-    width: 40%;
+  .mainTitle h3 {
+    font-size: 1.25rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .single-counter span {
-    font-size: 32px;
-    font-weight: bold;
+  .mainTitle h1 {
+    font-size: 1.5rem;
   }
 
-  .single-counter p {
-    font-size: 16px;
+  .mainTitle h2 {
+    font-size: 1.25rem;
   }
 
-  .progress {
-    width: 25%;
+  .mainTitle h3 {
+    font-size: 1rem;
   }
 }
 
