@@ -126,23 +126,9 @@ a.navbar-brand {
   width: 55%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 768px) {
   .mainTitle h1 {
-    font-size: 1.75rem;
-  }
-
-  .mainTitle h2 {
-    font-size: 1.5rem;
-  }
-
-  .mainTitle h3 {
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .mainTitle h1 {
-    font-size: 1.5rem;
+    font-size: 1.50rem;
   }
 
   .mainTitle h2 {
@@ -151,6 +137,20 @@ a.navbar-brand {
 
   .mainTitle h3 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainTitle h1 {
+    font-size: 1.25rem;
+  }
+
+  .mainTitle h2 {
+    font-size: 1rem;
+  }
+
+  .mainTitle h3 {
+    font-size: 0.75rem;
   }
 }
 
