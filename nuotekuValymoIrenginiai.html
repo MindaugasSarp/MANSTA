@@ -12,7 +12,8 @@
   <title>Nuotekų valymo įrenginiai</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="style/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- <link href="style/bootstrap.css" rel="stylesheet"> -->
 
   <!-- Custom styles for this template -->
   <link href="style/product.css" rel="stylesheet">
@@ -113,36 +114,10 @@
     </div>
   </nav>
 
-  <!-- sukasi skaiciukai -->
-  <!-- <div class="counter-section section-padding fix position-relative overflow-hidden">
-    <div class="wrapper row" style="flex-wrap: nowrap;">
-      <div class="single-counter col-md-4">
-        <span class="counter">1000</span>
-        <div class="progress mx-auto">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-        </div>
-        <p>KLIENTAI</p>
-      </div>
-      <div class="single-counter col-md-4">
-        <span class="counter">15</span>
-        <div class="progress mx-auto">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-        </div>
-        <p>KOMANDA</p>
-      </div>
-      <div class="single-counter col-md-4">
-        <span class="counter">7</span>
-        <div class="progress mx-auto">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-        </div>
-        <p>PATIRTIS</p>
-      </div>
-    </div>
-  </div> -->
   <!-- Produktai -->
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <!-- kaire puse -->
-    <div class="bg-light mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+    <div class="bg-light me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5" style="color: #024e73">AUGUST AT-6</h1>
@@ -151,7 +126,18 @@
         <div class="w-100 d-none d-md-block"></div>
 
         <div class="col-12 col-md-8">
-          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal6" style="width:100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></button>
+          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal6">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
         <div class="col-12 col-md-4">
           <img src="images/product_icons/people.svg" alt="zmogus" class="product-icon">
@@ -161,6 +147,7 @@
           <p style="color: #024e73">kaina 1290 Eur</p>
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon">
           <p style="color: #024e73">montavimo darbai nuo 350 Eur</p>
+          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal6" style="color: #024e73; border-color: #024e73">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -174,7 +161,7 @@
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel6" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-6</h5>
+            <h2 class="modal-title" id="exampleModalLabel6" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-6</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -183,8 +170,45 @@
             <div class="container-fluid">
               <div class="row" style="color: #024e73">
                 <div class="col-md-6 px-0">
-                  <div class="shadow-sm modal-product-img" style="width:100%; height: 600px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
-                  <p class="display-5">Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</p>
+                  <div class="shadow-sm modal-product-img">
+                    <div id="carouselModal6SlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 3_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 4_paaukstinimas.webp" class="d-block" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 6_diagonal.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 7_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 5_paaukstinimas-transparent.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 8_result.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal6SlidesOnly"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselModal6SlidesOnly"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  </div>
+                  <h3>Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</h3>
                 </div>
                 <div class="col-md-6 ml-auto px-0">
                   <ul class="list-group">
@@ -211,15 +235,14 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" class="btn btn-primary" data-dismiss="modal" style="color: #e0e0e0; background-color: #024e73; border-color: #024e73">Uždaryti</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- desine puse -->
-    <div class="mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden" style="background-color: #024e73;">
+    <div class="me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden" style="background-color: #024e73;">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5" style="color: #e0e0e0">AUGUST AT-8</h1>
@@ -228,7 +251,18 @@
         <div class="w-100 d-none d-md-block"></div>
 
         <div class="col-12 col-md-8">
-          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal8" style="width: 100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></button>
+          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal8">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
         <div class="col-12 col-md-4">
           <img src="images/product_icons/people_w.svg" alt="zmogus" class="product-icon">
@@ -238,6 +272,7 @@
           <p style="color: #e0e0e0">kaina 1560 Eur</p>
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon">
           <p style="color: #e0e0e0">montavimo darbai nuo 380 Eur</p>
+          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal8" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -252,7 +287,7 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel8" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-8</h5>
+          <h2 class="modal-title" id="exampleModalLabel8" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-8</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -261,8 +296,45 @@
           <div class="container-fluid">
             <div class="row" style="color: #024e73">
               <div class="col-md-6 px-0">
-                <div class="shadow-sm modal-product-img" style="width:100%; height: 600px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
-                <p class="display-5">Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</p>
+                <div class="shadow-sm modal-product-img">
+                  <div id="carouselModal8SlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 3_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 4_paaukstinimas.webp" class="d-block" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 6_diagonal.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 7_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 5_paaukstinimas-transparent.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 8_result.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal8SlidesOnly"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal8SlidesOnly"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
+                <h3>Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</h3>
               </div>
               <div class="col-md-6 ml-auto px-0">
                 <ul class="list-group">
@@ -289,8 +361,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-primary" data-dismiss="modal" style="color: #e0e0e0; background-color: #024e73; border-color: #024e73">Uždaryti</button>
         </div>
       </div>
     </div>
@@ -298,7 +369,7 @@
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <!-- kaire puse -->
-    <div class="productKP mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+    <div class="productKP me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5">AUGUST AT-10</h1>
@@ -307,7 +378,18 @@
         <div class="w-100 d-none d-md-block"></div>
 
         <div class="col-12 col-md-8">
-          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal10" style="width:100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></button>
+          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal10">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
         <div class="col-12 col-md-4">
           <img src="images/product_icons/people.svg" alt="pinigai" class="product-icon d-block d-sm-block d-md-none mx-auto">
@@ -319,6 +401,7 @@
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon d-block d-sm-block d-md-none mx-auto">
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon d-none d-sm-none d-md-block mx-auto">
           <p>montavimo darbai nuo 400 Eur</p>
+          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal10" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -332,7 +415,7 @@
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel10" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-10</h5>
+            <h2 class="modal-title" id="exampleModalLabel10" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-10</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -341,10 +424,47 @@
             <div class="container-fluid">
               <div class="row" style="color: #024e73">
                 <div class="col-md-6 px-0">
-                  <div class="shadow-sm modal-product-img" style="width:100%; height: 600px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
-                  <p class="display-5">Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</p>
+                  <div class="shadow-sm modal-product-img">
+                    <div id="carouselModal10SlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 3_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 4_paaukstinimas.webp" class="d-block" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 6_diagonal.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 7_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 5_paaukstinimas-transparent.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 8_result.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal10SlidesOnly"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselModal10SlidesOnly"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  </div>
+                  <h3>Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</h3>
                 </div>
-                <div class="col-md-6 ml-auto px-0">
+                <div class="col-md-6 ms-auto px-0">
                   <ul class="list-group">
                     <li class="list-group-item"><img src="images/product_icons/2.people.svg" alt="zmogus" class="product-icon">iki 8 gyventojų</li>
                     <li class="list-group-item"><img src="images/product_icons/1.eur.svg" alt="pinigai" class="product-icon">kaina 2180 Eur</li>
@@ -369,24 +489,33 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" class="btn btn-primary" data-dismiss="modal" style="color: #e0e0e0; background-color: #024e73; border-color: #024e73">Uždaryti</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- desine puse -->
-    <div class="productDP mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+    <div class="productDP me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5">AUGUST AT-12</h1>
         </div>
         <!-- Force next columns to break to new line at md breakpoint and up -->
         <div class="w-100 d-none d-md-block"></div>
-
         <div class="col-12 col-md-8">
-          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal12" style="width: 100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></button>
+          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal12">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
         <div class="col-12 col-md-4">
           <img src="images/product_icons/people.svg" alt="pinigai" class="product-icon d-none d-sm-none d-md-block mx-auto">
@@ -398,6 +527,7 @@
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon d-none d-sm-none d-md-block mx-auto">
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon d-block d-sm-block d-md-none mx-auto">
           <p>montavimo darbai nuo 450 Eur</p>
+          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal12" style="color: #024e73; border-color: #024e73">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -412,7 +542,7 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel12" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-12</h5>
+          <h2 class="modal-title" id="exampleModalLabel12" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-12</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -421,10 +551,47 @@
           <div class="container-fluid">
             <div class="row" style="color: #024e73">
               <div class="col-md-6 px-0">
-                <div class="shadow-sm modal-product-img" style="width:100%; height: 600px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
-                <p class="display-5">Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</p>
+                <div class="shadow-sm modal-product-img">
+                  <div id="carouselModal12SlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 3_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 4_paaukstinimas.webp" class="d-block" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 6_diagonal.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 7_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 5_paaukstinimas-transparent.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 8_result.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal12SlidesOnly"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal12SlidesOnly"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
+                <h3>Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</h3>
               </div>
-              <div class="col-md-6 ml-auto px-0">
+              <div class="col-md-6 ms-auto px-0">
                 <ul class="list-group">
                   <li class="list-group-item"><img src="images/product_icons/2.people.svg" alt="zmogus" class="product-icon">iki 10 gyventojų</li>
                   <li class="list-group-item"><img src="images/product_icons/1.eur.svg" alt="pinigai" class="product-icon">kaina 2740 Eur</li>
@@ -449,8 +616,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-primary" data-dismiss="modal" style="color: #e0e0e0; background-color: #024e73; border-color: #024e73">Uždaryti</button>
         </div>
       </div>
     </div>
@@ -458,7 +624,7 @@
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <!-- kaire puse -->
-    <div class="bg-light mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+    <div class="bg-light me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5" style="color: #024e73">AUGUST AT-15</h1>
@@ -467,7 +633,18 @@
         <div class="w-100 d-none d-md-block"></div>
 
         <div class="col-12 col-md-8">
-          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal15" style="width:100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></button>
+          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal15">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
         <div class="col-12 col-md-4">
           <img src="images/product_icons/people.svg" alt="zmogus" class="product-icon">
@@ -477,6 +654,7 @@
           <p style="color: #024e73">kaina 3320 Eur</p>
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon">
           <p style="color: #024e73">montavimo darbai nuo 3320 Eur</p>
+          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal15" style="color: #024e73; border-color: #024e73">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -490,7 +668,7 @@
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel15" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-15</h5>
+            <h2 class="modal-title" id="exampleModalLabel15" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-15</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -499,10 +677,47 @@
             <div class="container-fluid">
               <div class="row" style="color: #024e73">
                 <div class="col-md-6 px-0">
-                  <div class="shadow-sm modal-product-img" style="width:100%; height: 600px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
-                  <p class="display-5">Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</p>
+                  <div class="shadow-sm modal-product-img">
+                    <div id="carouselModal15SlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 3_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 4_paaukstinimas.webp" class="d-block" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 6_diagonal.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 7_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 5_paaukstinimas-transparent.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                          <img src="images/at_nauji/AT 8_result.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal15SlidesOnly"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselModal15SlidesOnly"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  </div>
+                  <h3>Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</h3>
                 </div>
-                <div class="col-md-6 ml-auto px-0">
+                <div class="col-md-6 ms-auto px-0">
                   <ul class="list-group">
                     <li class="list-group-item"><img src="images/product_icons/2.people.svg" alt="zmogus" class="product-icon">iki 12 gyventojų</li>
                     <li class="list-group-item"><img src="images/product_icons/1.eur.svg" alt="pinigai" class="product-icon">kaina 3320 Eur</li>
@@ -527,15 +742,14 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" class="btn btn-primary" data-dismiss="modal" style="color: #e0e0e0; background-color: #024e73; border-color: #024e73">Uždaryti</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- desine puse -->
-    <div class="mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden" style="background-color: #024e73;">
+    <div class="me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden" style="background-color: #024e73;">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5" style="color: #e0e0e0">AUGUST AT-20</h1>
@@ -544,7 +758,18 @@
         <div class="w-100 d-none d-md-block"></div>
 
         <div class="col-12 col-md-8">
-          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal20" style="width: 100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></button>
+          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModal20">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="height: 300px; border-radius: 21px 21px 21px 21px;">
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
         <div class="col-12 col-md-4">
           <img src="images/product_icons/people_w.svg" alt="zmogus" class="product-icon">
@@ -554,6 +779,7 @@
           <p style="color: #e0e0e0">kaina 4400 Eur</p>
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon">
           <p style="color: #e0e0e0">montavimo darbai nuo 480 Eur</p>
+          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal20" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -568,7 +794,7 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel20" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-20</h5>
+          <h2 class="modal-title" id="exampleModalLabel20" style="color: #024e73">Nuotekų valymo įrenginys AUGUST AT-20</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -577,10 +803,47 @@
           <div class="container-fluid">
             <div class="row" style="color: #024e73">
               <div class="col-md-6 px-0">
-                <div class="shadow-sm modal-product-img" style="width:100%; height: 600px; border-radius: 21px 21px 21px 21px; background-image: url(images/2_mb.png); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
-                <p class="display-5">Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</p>
+                <div class="shadow-sm modal-product-img">
+                  <div id="carouselModal20SlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT _hero_front.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 1_up.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 3_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 4_paaukstinimas.webp" class="d-block" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 6_diagonal.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 7_inside.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 5_paaukstinimas-transparent.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/at_nauji/AT 8_result.webp" class="d-block w-100" alt="..." style="max-height: 600px; border-radius: 21px 21px 21px 21px;">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal20SlidesOnly"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal20SlidesOnly"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
+                <h3>Komplektacijoje: orapūtė, orapūtės talpa, automatinis valdiklis.</h3>
               </div>
-              <div class="col-md-6 ml-auto px-0">
+              <div class="col-md-6 ms-auto px-0">
                 <ul class="list-group">
                   <li class="list-group-item"><img src="images/product_icons/2.people.svg" alt="zmogus" class="product-icon">iki 18 gyventojų</li>
                   <li class="list-group-item"><img src="images/product_icons/1.eur.svg" alt="pinigai" class="product-icon"><!-- <S style="color: #777777">kaina 1550 Eur</S>  -->kaina 4400 Eur</li>
@@ -605,8 +868,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-primary" data-dismiss="modal" style="color: #e0e0e0; background-color: #024e73; border-color: #024e73">Uždaryti</button>
         </div>
       </div>
     </div>
@@ -614,7 +876,7 @@
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <!-- kaire puse -->
-    <div class="productKP mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+    <div class="productKP me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5">Automatinis valdiklis BASIC</h1>
@@ -623,7 +885,9 @@
         <div class="w-100 d-none d-md-block"></div>
 
         <div class="col-12 col-md-8">
-          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModalBasic" style="width: 100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/Automatinis-valdiklis.webp); background-position: center; background-size: contain; background-repeat: no-repeat;"></button>
+          <button class="btn shadow-sm" type="button" data-toggle="modal" data-target="#exampleModalBasic">
+            <img src="images/Automatinis-valdiklis.webp" class="d-block w-100" alt="..." style="height: auto; border-radius: 21px 21px 21px 21px;">
+          </button>
         </div>
 
         <!-- <div class="col-12 col-md-8">
@@ -633,6 +897,7 @@
           <img src="images/product_icons/eur.svg" alt="pinigai" class="product-icon d-block d-sm-block d-md-none mx-auto">
           <img src="images/product_icons/eur_w.svg" alt="pinigai" class="product-icon d-none d-sm-none d-md-block mx-auto">
           <p>kaina 145 Eur</p>
+          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModalBasic" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
       </div>
     </div>
@@ -652,7 +917,7 @@
                 <div class="col-md-5 px-0">
                   <div class="shadow-sm" style="width:100%; height: 350px; border-radius: 21px 21px 21px 21px; background-image: url(images/Automatinis-valdiklis.webp); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
                 </div>
-                <div class="col-md-7 ml-auto px-0">
+                <div class="col-md-7 ms-auto px-0">
                   <ul class="list-group">
                     <li class="list-group-item"><img src="images/product_icons/check_m.svg" alt="check" class="product-icon">Automatizuoja, supaprastina ir atpigina nuotekų valymo įrenginio eksploataciją</li>
                     <li class="list-group-item"><img src="images/product_icons/check_m.svg" alt="check" class="product-icon">7 standartinės programos (priklausomai nuo apkrovų)</li>
@@ -670,8 +935,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Uždaryti</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            <button type="button" class="btn btn-primary" data-dismiss="modal" style="color: #e0e0e0; background-color: #024e73; border-color: #024e73">Uždaryti</button>
           </div>
         </div>
       </div>
@@ -679,7 +943,7 @@
 
 
     <!-- desine puse -->
-    <div class="productDP mr-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
+    <div class="productDP me-md-3 pt-1 px-3 pt-md-3 px-md-5 text-center overflow-hidden">
       <div class="row">
         <div class="col-sm-12 mainTitle">
           <h1 class="display-5">Konusinis paaukštinimas</h1>
@@ -688,7 +952,9 @@
         <div class="w-100 d-none d-md-block"></div>
 
         <div class="col-12 col-md-8">
-          <div class="shadow-sm" style="width: 100%; height: 300px; border-radius: 21px 21px 21px 21px; background-image: url(images/AT-dangcio-sumazinimas.webp); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
+          <div>
+            <img src="images/AT-dangcio-sumazinimas.webp" class="d-block w-100 shadow-sm" alt="..." style="height: auto; border-radius: 21px 21px 21px 21px;">
+          </div>
         </div>
         <div class="col-12 col-md-4">
           <img src="images/product_icons/eur.svg" alt="pinigai" class="product-icon d-none d-sm-none d-md-block mx-auto">
@@ -755,7 +1021,11 @@
 ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
 
-  <script src="script/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="script/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
   <script>
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
   </script>
