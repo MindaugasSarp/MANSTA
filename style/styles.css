@@ -187,11 +187,13 @@ a.navbar-brand {
   .productKP {
     background-color: white !important;
     color: #024e73 !important;
+    border-color: #024e73 !important;
   }
 
   .productDP {
     background-color: #024e73 !important;
-    color: white !important;
+    color:#e0e0e0 !important;
+    border-color: #e0e0e0 !important;
   }
   .modal-product-img {
     height: 300px !important;

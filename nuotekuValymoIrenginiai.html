@@ -54,6 +54,13 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
 
+    <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+      if( $(e.target).is('nav-link') ) {
+          $(this).collapse('hide');
+      }
+  });
+  </script>
 </head>
 
 <body>
@@ -147,7 +154,7 @@
           <p style="color: #024e73">kaina 1290 Eur</p>
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon">
           <p style="color: #024e73">montavimo darbai nuo 350 Eur</p>
-          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal6" style="color: #024e73; border-color: #024e73">Daugiau</a>
+          <a class="btn m-3 btn-outline" type="button" data-toggle="modal" data-target="#exampleModal6" style="color: #024e73; border-color: #024e73">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -272,7 +279,7 @@
           <p style="color: #e0e0e0">kaina 1560 Eur</p>
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon">
           <p style="color: #e0e0e0">montavimo darbai nuo 380 Eur</p>
-          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal8" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
+          <a class="btn m-3 btn-outline" type="button" data-toggle="modal" data-target="#exampleModal8" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -401,7 +408,7 @@
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon d-block d-sm-block d-md-none mx-auto">
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon d-none d-sm-none d-md-block mx-auto">
           <p>montavimo darbai nuo 400 Eur</p>
-          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal10" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
+          <a class="productKP m-3 btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal10" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -527,7 +534,7 @@
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon d-none d-sm-none d-md-block mx-auto">
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon d-block d-sm-block d-md-none mx-auto">
           <p>montavimo darbai nuo 450 Eur</p>
-          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal12" style="color: #024e73; border-color: #024e73">Daugiau</a>
+          <a class="productDP m-3 btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal12" style="color: #024e73; border-color: #024e73">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -653,8 +660,8 @@
          <!--  <S style="color: #777777"><p style="color: #777777">kaina 1250 Eur</p></S> -->
           <p style="color: #024e73">kaina 3320 Eur</p>
           <img src="images/product_icons/montavimas_b.svg" alt="montavimo darbai" class="product-icon">
-          <p style="color: #024e73">montavimo darbai nuo 3320 Eur</p>
-          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal15" style="color: #024e73; border-color: #024e73">Daugiau</a>
+          <p style="color: #024e73">montavimo darbai nuo 480 Eur</p>
+          <a class="btn m-3 btn-outline" type="button" data-toggle="modal" data-target="#exampleModal15" style="color: #024e73; border-color: #024e73">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -779,7 +786,7 @@
           <p style="color: #e0e0e0">kaina 4400 Eur</p>
           <img src="images/product_icons/montavimas_w.svg" alt="montavimo darbai" class="product-icon">
           <p style="color: #e0e0e0">montavimo darbai nuo 480 Eur</p>
-          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModal20" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
+          <a class="btn m-3 btn-outline" type="button" data-toggle="modal" data-target="#exampleModal20" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
 
         <div class="w-100 d-none d-md-block"></div>
@@ -897,7 +904,7 @@
           <img src="images/product_icons/eur.svg" alt="pinigai" class="product-icon d-block d-sm-block d-md-none mx-auto">
           <img src="images/product_icons/eur_w.svg" alt="pinigai" class="product-icon d-none d-sm-none d-md-block mx-auto">
           <p>kaina 145 Eur</p>
-          <a class="btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModalBasic" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
+          <a class="productKP m-3 btn btn-outline" type="button" data-toggle="modal" data-target="#exampleModalBasic" style="color: #e0e0e0; border-color: #e0e0e0">Daugiau</a>
         </div>
       </div>
     </div>
