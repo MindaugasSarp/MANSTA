@@ -40,7 +40,7 @@ $email_body = "Užsakovo vardas: $name.\n".
     "Kur išleisime išvalytą vandenį: $radioFour.\n".
 
 
-$to = 'info@mansta.lt';//<== update the email address mindaugas.sharpis@gmail.com info@mansta.lt
+$to = 'keedagnexus@gmail.com';//<== update the email address mindaugas.sharpis@gmail.com info@mansta.lt
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
