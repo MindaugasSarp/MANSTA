@@ -134,7 +134,7 @@
 				<div class="mr-md-3 pt-1 px-3 pt-md-3 px-md-3 text-white overflow-hidden" style="background-color: #024e73;">
 					<div class="my-1 p-1 mainTitle">
 						<h1 class="text-center"><small>Gauti sąmatą</small></h1>
-						<form method="post" name="gautiSamataForma" action="gautiSamata.php">
+						<form method="post" name="gautiSamataForma" action="gautiSamata.php" enctype="multipart/form-data">
 							<div class="form-row align-items-center mb-0">
 								<div class="form-group col-md-12 mx-auto mb-0">
 									<div class="row">
@@ -162,10 +162,8 @@
 											<label class="mr-1 col-md-12 pt-1">Prisekite nuotekų šalinimo projekto dalį:</label>
 										</div>
 										<div class="col-md-6">
-											<form action="/upload.php">
 												<label for="myfile">Pasirinkti dokumentą:</label>
-												<input type="file" id="myfile" name="myfile" multiple><br><br>
-											</form>
+												<input type="file" id="fileToUpload" name="fileToUpload" multiple><br><br>
 										</div>
 									</div>	
 								</div>		
