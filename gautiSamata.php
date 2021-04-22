@@ -13,6 +13,7 @@ $radioTwo = $_POST['radioTwo'];
 $metrai = $_POST['metrai'];
 $radioThree = $_POST['radioThree'];
 $radioFour = $_POST['radioFour'];
+$fileToUpload = $_POST['fileToUpload'];
 
 //Validate first
 if(empty($name)||empty($visitor_email))
@@ -38,9 +39,10 @@ $email_body = "Užsakovo vardas: $name.\n".
 		"Kiek metrų reikės visiems montavimo darbams: $metrai.\n".
 		"Gruntas Jūsų sklype: $radioThree.\n".
     "Kur išleisime išvalytą vandenį: $radioFour.\n".
+    "Nuotekų šalinimo projektas: $fileToUpload.\n".
 
 
-$to = 'keedagnexus@gmail.com';//<== update the email address mindaugas.sharpis@gmail.com info@mansta.lt
+$to = 'i20blackpearl@gmail.com';//<== update the email address mindaugas.sharpis@gmail.com info@mansta.lt
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
@@ -78,7 +80,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
-if(isset($_POST["send"])) {
+if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
   if($check !== false) {
     echo "File is an image - " . $check["mime"] . ".";
